@@ -1,0 +1,34 @@
+
+<!-- P A R    |     I M P A R -->
+<!-- Joanmarc Maldonado-->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<title>PAR | IMPAR</title>
+<meta charset="UTF-8">
+</head>
+<body>
+
+<script type="text/javascript">
+
+// En el seguent script veurem com fer que ens detecti si el nombre introduit
+// es parell o imparell.
+// Declararem una variable assignada al número que introduirem. Aqueta variable
+// requerirà mitjançant un missatge de navegador Prompt, el nombre a ingressar. 
+// Si es compleix la condicio if de que el nombre sigui parell, comprovant-ho
+// que es pot dividir entre dos i donar de residu 0 ( ), ejs printarà damunt del 
+// document el missatge de que es parell, si no ho és i el valor final no és 0
+// Introduira el missatge contrari al primer. 
+  var numero;
+
+  numero=prompt('Ingresa el número','');
+    if (numero % 2 == 0)
+  {
+    document.write('Aquest número és parell.');
+  }
+  else {document.write('Aquest número és imparell.');}
+
+</script>
+</body>
+</html>

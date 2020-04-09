@@ -1,0 +1,34 @@
+<!-- Comparador de Nombres -->
+<!DOCTYPE html>
+<html lang="es">
+ <meta charset="UTF-8">
+<head>
+	<title>Nombre major de forma condicional</title>
+</head>
+<body>
+<center>
+<script type="text/javascript">
+	var numero01; // Declarem dos variables que seràn els dos valors  
+	var numero02; // que nosaltres li posarém despres. 
+        // El parse int es un convertidor. Dins pot contindre una cadena o array.
+        // El que fa es tornarnos un valor ENTER, INTEGRAL de la base especificada
+        // Si posesem un parseFloat, podriem posar un nombre decimal. 
+        // Podem calcular igual amb nombres decimals amb el parseInt i ens retornaria 
+        // unicament amb un integral. 
+	numero01=parseFloat(prompt("Ingresa un valor x,")); // El prompt tira un missatge on podem 
+	numero02=parseFloat(prompt("Ingresa un valor y,")); // introduir el valor a comparar. 
+        // Ara crearem un condicional "if" on compararà si el numero 1 es major o igual a numero 2. 
+        // Si això retorna TRUE, sortirà un text escrit al document que ens indicarà que numero 1 es major a numero 2. 
+        // Si torna FALSE, executa "else" printant que el número major es el 2 en més de l'1. 
+	if(numero01 >= numero02)
+	{
+	document.write("El nombre major és: " + numero01 + " ( Numero 1 )");
+	}
+	else
+	{
+	document.write("El nombre major és : " + numero02 + " ( Numero 2 )");
+	}
+</script>
+</center>
+</body>
+</html>

@@ -1,0 +1,11 @@
+*********************************************************
+*********************************************************
+** Aquesta pràctica d'scripts conté la documentació    **
+** comentada sobre el codi, per esclarificar els passos**
+** Així mateix està respaldada a GitHub on disposa     **
+** d'uns repositoris on actualitzo i munto cada petit  **
+** projecte de codi. 				       **
+*********************************************************
+*********************************************************
+				   // Joan Marc Maldonado 
+				  // https://github.com/Maldo601

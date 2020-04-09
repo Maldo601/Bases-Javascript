@@ -1,0 +1,47 @@
+<!-- CONVERSOR JAVASCRIPT -->
+<!-- En primer lloc crearem un esquelet de HTML
+     per contindre el formulari i els camps. 
+     També li crearem el botó de convertir
+     i mitjançant un oneckick li especificarem la funció de caluclar.-->
+     <!DOCTYPE html>
+     <head>
+     <meta charset="UTF-8">
+     <title> EUROBIT Converter </title>
+     </head>
+     
+     <body bgcolor="white">
+     <form name="convertidor">
+         <h2> Conversor
+         <br> Preu del Bitcoin en Euros : 1€ = 6629,39 </h2>
+        
+         <br> Inserta els Bitcoins  : <input type="text" id="Bit">
+         <hr>
+         <br> Mostra'm els Euros : <input type="text" id="Eur">
+         <br>
+         <br><input type="button" value="CONVERTIR" onclick="calcular();">
+             <input type="button" value="Eur - Bit" onclick="location.href='index.html'">
+               
+     </form>
+     
+     <script type="text/javascript">
+     
+     function calcular(){
+     
+         
+         if  (document.getElementById('Bit').value == ""){
+                       alert("No has introduit cap valor")
+             }
+         
+         else {
+             var pes = parseFloat(document.getElementById('Bit').value) * 1;
+             var tot = pes * 6629.39;
+                 tot = tot.toFixed(2);
+         
+              document.getElementById('Eur').value = tot;  
+     
+             }
+         }
+            
+     </script>
+     </body>
+     </html>

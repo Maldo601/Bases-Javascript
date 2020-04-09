@@ -1,0 +1,23 @@
+Conclusions de la UF6
+
+
+
+
+- Tenia moltes ganes que arribessim a aquest punt de l'assignatura, ja que la programació WEB o Multiplataforma
+- és dintre de la informàtica amb el que em vull especialitzar. 
+- He pogut ampliar els meus coneixements que tenia de programació, ja que fins ara només havia tocat 
+- C++ per a programar Arduino i Shell Script, on ja havia fet una calculadora a primer i scripts del tipus. 
+- He vist que entre llenguatges es poden fer les coses de formes molt diferents i aplicades a contextos
+- també diferents. 
+
+- Dintre de Javascript ja tenia idea de referenciar o cridar amb getElement, així com evitar la mala pràctica
+- d'encadenar rutes dintre del codi de manera absoluta i no relativa o amb identitat. 
+- Si que m'ha costat més entendre els conceptes de "case", "switch" o com es relaciona la estructura general
+- entre ella, al principi, pero treballant poc a poc i entenent el perque de cada cosa i com s'integra
+- he pogut esbrinar bastant més i ampliar, com he dit, els coneixements. 
+
+- També he aprofitat per crear un Git Hub on aniràn tots els projectes de classe, web i el futur contingut
+- del cicle superior, així com repositoris de codi personals i biblioteques on tindre petits fragments 
+- bàsics que puc agafar si els necessito a algun lloc. 
+
+                                                                            Joan Marc Maldonado 

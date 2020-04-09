@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<!-- Aqui cridare una llibreria d'estils reduida-->
+<link 
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css" 
+class="rel">
+</head>
+<!-- Crearem dos divs amb un botó anomenat JSON, que servirà per cridar l'arxiu -->
+<!-- Descarregarem una taula amb estils propis de la llibreria desde 
+     https://www.materializecss.com i la introduirem després del botó -->
+<body>
+ <div class="container">
+ <div class="section"> 
+ <button class="btn" id="boton">Json</button>
+ <table>
+  <thead>
+   <tr>
+    <th>Nom</th>
+    <th>Cognom</th>      
+   </tr>
+  </thead>
+  <!-- Crearem el tbody i li donarem un id random.-->
+  <tbody id="res">
+
+  </tbody>
+ </table>
+ </div>
+ </div>
+     
+ <script src="ajax.js"></script>
+ 
+</body>
+</html>

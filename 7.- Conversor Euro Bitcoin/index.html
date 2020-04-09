@@ -1,0 +1,77 @@
+<!-- CONVERSOR JAVASCRIPT -->
+<!-- En primer lloc crearem un esquelet de HTML
+     per contindre el formulari i els camps. 
+     També li crearem el botó de convertir
+     i mitjançant un oneckick li especificarem la funció de caluclar.-->
+<!DOCTYPE html>
+<head>
+<meta charset="UTF-8">
+<title> EUROBIT Converter </title>
+</head>
+
+<body bgcolor="white">
+<div class="formulari">
+<form name="convertidor">
+    <h2> Conversor
+    <br> Preu del Bitcoin en Euros : 1€ = 6629,39 </h2>
+   
+    <br> Introdueix els Euro    : <input type="text" id="Euro">
+    <hr>
+    <br> Mostra els Bitcoins : <input type="text" id="Bitcoin">
+    <br>
+    <br><input type="button" value="CONVERTIR" onclick="calcular();">
+        <input type="button" value="Bit - Eur" onclick="location.href='Biteuro.html'">
+          
+</form>
+</div>
+
+<script type="text/javascript">
+
+// La següent funció com podem veure s'executa quan li donem un oneclick.
+
+// Aquesta versió del codi és la definitiva. Les passades presentaven errors, ja que inclús
+// traduint els valors, seguia tiant l'alerta. S'ha solucionat referenciant valors en més d'assignar "nulls" o "undefineds".
+
+// La finalitat és que si no introduim valor, surti una alerta dientnos que no hem introduit res, pero que tampoc tire un NaN. 
+
+// Al principi, el "if" tenia un "pes == null". El else tenia un "pes == 0" per detectar valor numeric. 
+
+// S'ha intentat colar a la funció un evt.preventDefault(), no obstant no ha tingut resultat.
+
+// S'ha solucionat mitjançant la comprovació "step by step" debuguejant, els valors i mostrant-los per consoles log o alerts. 
+
+// Finalment he donat amb la solució de referenciar el valor Euro al primer IF i usar la nulitat com a "" ja que aqui dins no hi ha res. 
+
+// Seria semblant a un empty, null, undefined pero sense fer ús d'aquestos, ja que, segons l'estructura del codi, ens obliguen a modificar el codi
+// i complicar-lo mes. 
+
+// Les rutes estan referenciades en document.getElementById, ja que si anés a punt per punt, ara potser no perque es un script curt, pero a la llarga 
+// seria tediós. Referenciar en getelement es una bona manera d'optimitzar el codi. 
+
+// S'adjuntaràn captures d'anteriors versions del codi per demostrar que no es algo copiat. 
+
+function calcular(){
+
+    //console.log(getElementById('Euro').value);
+    // " Si la ruta identificada es Euro i conté el valor "" exclusivament, tira l'alerta. "
+    if  (document.getElementById('Euro').value == ""){
+                  alert("No has introduit cap valor")
+        }
+    // Si no es compleix l'anterior, llavors, la variable "pes" contindrà un valor a temps real introduit per navegador.
+    // Aquest valor serà definit per l'usuari i s'usarà com a factor multiplicador a una conversió en forma de Regla de 3. 
+    // La variable tot (total) agafarà el "pes" ( valor inserit per l'usuari) i ho dividirà per el preu actual del Bitcoin
+    // Li direm que ens torni maxim 5 decimals, ja que pocs euros, representen uns quants 0's i decimals a la conversió.
+    // Si per exemple el valor fixat fos 3 decimals, probablement si posem 10 € nomes ens sortira 0.000 Bitcoin.
+    else {
+        var pes = parseFloat(document.getElementById('Euro').value) *1;
+        var tot = pes / 6629.39;
+            tot = tot.toFixed(5);
+    // Finalment li referenciarem el camp "bitcoin" per a que el valor que tire sigui la variable "tot", o sigue, el total. 
+         document.getElementById('Bitcoin').value = tot;  
+
+        }
+    }
+       
+</script>
+</body>
+</html>

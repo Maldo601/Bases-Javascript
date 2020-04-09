@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title> Botó JS</title>
+<!--UF 4 - Introducció als Llenguatges de programació. JavaScript -->
+<!-- Aqui creem una funció anomenada "Dades" o com vulguem-->
+
+<script type="text/javascript">
+	function dades() 
+	{
+        /* Li declararem dos variables que seràn nom i edat, per cridarles després
+           utilitzarem un mètod que fa que dintre del document vagi al element amb identitat
+           especificada, en aquest cas, nom. Després li introduirem un valor que serà el que 
+           li introduirem.*/
+
+		var nom = document.getElementById('nom').value;
+
+        /* Farem algo semblant amb la seguent declaració, no obstant introduirem un parseFloat
+           el que fa això és que interpreta el seu argument, una chain, i retorna un decimal en 
+           coma flotant. S'usa per introduir números que poden contindre decimals. Si el que
+           introduim no es un número o no es vàlid ens retornarà "NaN".
+           Ja després li introduim el mètode o funció de document.getElementById com abans.*/
+
+		var edat = parseFloat(document.getElementById('edat').value);
+
+        /* Finalment li indicarem que al document agafe el registre del nom obtingut i el valor
+           i tire un output amb el nom. El mateix amb l'edat. Es pot dir que és una concatenació.
+           
+           No obstant imaginem per un moment que ara no tenim un document amb un form de registre.
+           Imaginem que tenim un Formulari fet a base de divs dintre de divs i dintre de divs. */
+
+           
+		                    /* document.registre.nomobtingut.value = nom; */
+		                   /* document.registre.edatobtinguda.value = edat; */
+
+
+        /* Esta concatenació anterior seria massa llarga i podem optimitzar el codi de la següent
+           forma. És una bona pràctica optimitzar codi així, ja que no has d'escriure tots els 
+           saltos. Es mes com una ruta relativa i no tant absoluta com l'anterior concatenació. */
+
+           document.getElementById('nomobtingut').value = nom;
+           document.getElementById('edatobtinguda').value = edat;
+
+        /* nom obtingut i edat obtinguda son una crida a l'identificador de la segona taula del 
+           formulari */
+    }
+</script>
+</head>
+        <!-- Aquí crearem el formulari. No te cap tipus de misteri generar la estructura i els noms
+             no obstant comentarem la taula i el "oneclick"dades(). Aquest últim fa que al clicar
+             es llegeixqui la funció de dades on son les crides als elements."-->
+<body>
+    <form name="registre">
+        <table>
+        <tr>
+            <td>Nom:</td><td><input type="text" name="nom" id="nom" ></td>
+        </tr>	
+        <tr>
+            <td>Edat:</td><td><input type="text" name="edat" id="edat" ></td>
+        </tr>
+        <tr>
+            <td colspan "2"><input type="button" name="btn1" value="Enviar" onclick="dades()"></td>
+        </tr>
+        </table><br/><br/><br/>
+        
+        
+        
+        
+        <table>
+        <tr>
+            <td>Nom:</td><td><input type="text" name="nomobtingut" id="nomobtingut" ></td>
+        </tr>	
+        <tr>
+            <td>Edat:</td><td><input type="text" name="edatobtinguda" id="edatobtinguda" ></td>
+        </tr>
+        </table>
+        </form>     
+
+</body>
+</html>
