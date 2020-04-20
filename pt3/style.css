@@ -1,0 +1,136 @@
+@font-face {
+    font-family: 'Press Start 2p';
+  }
+  body {
+    
+    /* Fondo inmovible*/
+    /*background-image: url(ruleta.jpg);*/
+    background-image: url(img/8bit.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    
+    font-size: 30pt;
+    font-family: 'Press Start 2p';
+    
+  
+  }
+  .video-game-button {
+      text-shadow: 1px 1px pink, -1px -1px maroon;
+  
+      line-height: 1.5em;
+      text-align: center;
+      display: inline-block;
+      width: 1.5em;
+      -webkit-border-radius: .75em;
+      -moz-border-radius: .75em;
+      -o-border-radius: .75em;
+          border-radius: .75em;
+      background-color: red;
+      -webkit-box-shadow:  0 .2em maroon;
+      -moz-box-shadow:  0 .2em maroon;
+      -o-box-shadow:  0 .2em maroon;
+      box-shadow:  0 .2em maroon;
+      color: red;
+      margin: 5px;
+      background-color: red;
+      background-image: -o-linear-gradient(left top, pink 3%, red 22%, maroon 99%);
+      background-image: -moz-linear-gradient(left top, pink 3%, red 22%, maroon 99%);
+      background-image: -webkit-linear-gradient(left top, pink 3%, red 22%, maroon 99%);
+      background-image: linear-gradient(left top, pink 3%, red 22%, maroon 99%);
+      cursor: pointer;
+    padding-left: 5px;
+    margin-left: 34%;
+    margin-top: 0%;
+
+   /* TEXT NO SELECCIONABLE */
+    -moz-user-select: none; 
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none; 
+  }
+  .start-btn{
+      text-align: center;
+      display: inline-block;
+      margin:5px;
+      font-weight: bold;
+      padding: 10px 0 10px 10px ;
+      background-color: rgb(220, 224, 195);
+      text-shadow: -1px -1px black, 1px 1px white;
+      color: gray;
+      -webkit-border-radius: 7px;
+      -moz-border-radius: 7px;
+      -o-border-radius: 7px;
+      border-radius: 7px;
+      box-shadow: 0 .2em gray; 
+      cursor: pointer;
+
+    /* TEXT NO SELECCIONABLE */
+    -moz-user-select: none; 
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none; 
+  
+  }
+  .video-game-button:active, .start-btn:active {
+      box-shadow: none;
+      position: relative;
+      top: .2em;
+
+      /* TEXT NO SELECCIONABLE */
+      -moz-user-select: none; 
+      -webkit-user-select: none;
+      -ms-user-select: none;
+      user-select: none; 
+  }
+
+  .input1 {
+  
+    width: 100px;
+    margin-top: 10%;
+    margin-left: 34%;
+    margin-bottom: 5%;
+    padding: 25px;
+    border-radius: 100px;
+    text-align: center;
+    font-family: bold;
+    font-size: 30px;
+    font-weight: 100px;
+    background-color: rgba(0, 255, 255, 0.288);
+    border-width: 10px;
+    border-color: tomato;
+    border-spacing: 2px;
+  }
+  .output1 {
+    width: 320px;
+    padding: 25px;
+    border-radius: 100px;
+    text-align: center;
+    font-family: bold;
+    font-size: 18px;
+    font-weight: 100px;
+    background-color: rgba(0, 255, 255, 0.288);
+    border-width: 10px;
+    border-color: tomato;
+    border-spacing: 2px;
+  }
+  .Instruccions {
+    margin-top: 3%;
+    margin-left: 35%;
+    color: rgb(235, 199, 199);
+    font-size: 18px;
+    
+  }
+  .respostes {
+    color: whitesmoke;
+    text-shadow:yellowgreen ;
+    font-size: 18px ;
+    background-color: rgba(67, 49, 129, 0.541);
+    width: 300px;
+    overflow: hidden;
+    position: fixed;
+    margin-left: 15%; 
+    margin-top: 11%;
+  }
+  
